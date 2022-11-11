@@ -4,10 +4,11 @@
   tasks:
     - name: Import VPC Variables
       include_vars: vp_setup1
+
     - name: Create vprofile VPC
       ec2_vpc_net:
-        name: "{{vpc_name}}"
-        cidr_block: "{{vpcCidr}}"
+        name: '{{vpc_name}}'
+        cidr_block: '{{vpcCidr}}'
         region: "{{region}}"
         dns_support: yes
         tenancy: default
