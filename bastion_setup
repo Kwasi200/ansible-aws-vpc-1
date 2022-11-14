@@ -2,4 +2,4 @@ bastion_ami: ami-0648ea225c13e0729
 region: eu-west-2
 
 
-MYIP: 86.15.94.228/32
+MYIP: 92.40.168.56/32
