@@ -57,12 +57,12 @@
 
     - name: update security group with its own sg id
       ec2_group:
-         name: vprostack-sg
-         description: allow port 22 from everywhere and all port within sg
-         region: "{{region}}"
-         vpc_id: "{{vpcid}}"
-         purge_rules: no
-         rules:
+        name: vprostack-sg
+        description: allow port 22 from everywhere and all port within sg
+        region: "{{region}}"
+        vpc_id: "{{vpcid}}"
+        purge_rules: no
+        rules:
           - proto: all
             group_id: "{{ vprostacksg_out.group_id }}"
 
