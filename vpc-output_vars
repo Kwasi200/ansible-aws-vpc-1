@@ -12,4 +12,4 @@ NatGWid: nat-0a784cc1d9a26e0d6
 privRTid: rtb-0ac089d27d455ba30
 bastionSGid:
 # BEGIN ANSIBLE MANAGED BLOCK
-bastionSGid:
+bastionSGid: sg-02724457154e399c3
