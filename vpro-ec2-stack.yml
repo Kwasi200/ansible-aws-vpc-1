@@ -36,8 +36,8 @@
             cidr_ip: 0.0.0.0/0
         register: vproELBSG_out
 
-     - name: creating security group for vprofile stack
-       ec2_group:
+    - name: creating security group for vprofile stack
+      ec2_group:
         key_name: vprostack-sg
         description: allow port 22 from everywhere and all port within sg
         region: "{{region}}"
